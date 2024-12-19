@@ -1,0 +1,41 @@
+#!/bin/bash
+
+
+##########################
+
+# Author: Yash
+#
+# Date: 19 Dec 2024
+#
+# Version: v1
+#
+# This script will report the AWS resource usage
+
+##########################
+
+set -x
+
+# AWS S3
+# AWS EC2
+# AWS Lambda
+# AWS IAM Users
+
+LOG_FILE="/mnt/c/Piyush.7.7.7/All-About-Study/Devops/Projects/Shell-Scripting/Aws-Resource-Tracker/aws-resource-tracker.log"
+
+# AWS S3
+echo "Fetching AWS S3 Buckets List..." >> $LOG_FILE
+aws s3 ls >> $LOG_FILE 2>&1
+
+# AWS EC2
+echo "Fetching AWS EC2 Instances List..." >> $LOG_FILE
+aws ec2 describe-instances --query "Reservations[*].Instances[*].{ID:InstanceId,State:State.Name,Type:InstanceType,PublicIP:PublicIpAddress,PrivateIP:PrivateIpAddress}" --output table >> $LOG_FILE 2>&1
+
+# AWS Lambda
+echo "Fetching AWS Lambda Functions List..." >> $LOG_FILE
+aws lambda list-functions --query "Functions[*].{FunctionName:FunctionName,Runtime:Runtime,Handler:Handler,LastModified:LastModified}" --output table >> $LOG_FILE 2>&1
+
+# AWS IAM Users
+echo "Fetching AWS IAM Users List..." >> $LOG_FILE
+aws iam list-users --query "Users[*].{UserName:UserName,CreateDate:CreateDate,Arn:Arn}" --output table >> $LOG_FILE 2>&1
+
+

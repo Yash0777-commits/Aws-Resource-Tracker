@@ -758,3 +758,83 @@ Fetching AWS IAM Users List...
 |  CreateDate |  2024-12-19T09:56:31+00:00             |
 |  UserName   |  maxop                                 |
 +-------------+----------------------------------------+
++ LOG_FILE=/mnt/c/Piyush.7.7.7/All-About-Study/Devops/Projects/Shell-Scripting/Aws-Resource-Tracker/aws-resource-tracker.log
++ echo 'Fetching AWS S3 Buckets List...'
+Fetching AWS S3 Buckets List...
++ aws s3 ls
++ echo 'Fetching AWS EC2 Instances List...'
+Fetching AWS EC2 Instances List...
++ aws ec2 describe-instances --query 'Reservations[*].Instances[*].{ID:InstanceId,State:State.Name,Type:InstanceType,PublicIP:PublicIpAddress,PrivateIP:PrivateIpAddress}' --output table
++ echo 'Fetching AWS Lambda Functions List...'
+Fetching AWS Lambda Functions List...
++ aws lambda list-functions --query 'Functions[*].{FunctionName:FunctionName,Runtime:Runtime,Handler:Handler,LastModified:LastModified}' --output table
++ echo 'Fetching AWS IAM Users List...'
+Fetching AWS IAM Users List...
++ aws iam list-users --query 'Users[*].{UserName:UserName,CreateDate:CreateDate,Arn:Arn}' --output table
+--------------------------------------------------------
+|                       ListUsers                      |
++-------------+----------------------------------------+
+|  Arn        |  arn:aws:iam::615299766465:user/maxop  |
+|  CreateDate |  2024-12-19T09:56:31+00:00             |
+|  UserName   |  maxop                                 |
++-------------+----------------------------------------+
++ LOG_FILE=/mnt/c/Piyush.7.7.7/All-About-Study/Devops/Projects/Shell-Scripting/Aws-Resource-Tracker/aws-resource-tracker.log
++ echo 'Fetching AWS S3 Buckets List...'
+Fetching AWS S3 Buckets List...
++ aws s3 ls
++ echo 'Fetching AWS EC2 Instances List...'
+Fetching AWS EC2 Instances List...
++ aws ec2 describe-instances --query 'Reservations[*].Instances[*].{ID:InstanceId,State:State.Name,Type:InstanceType,PublicIP:PublicIpAddress,PrivateIP:PrivateIpAddress}' --output table
++ echo 'Fetching AWS Lambda Functions List...'
+Fetching AWS Lambda Functions List...
++ aws lambda list-functions --query 'Functions[*].{FunctionName:FunctionName,Runtime:Runtime,Handler:Handler,LastModified:LastModified}' --output table
++ echo 'Fetching AWS IAM Users List...'
+Fetching AWS IAM Users List...
++ aws iam list-users --query 'Users[*].{UserName:UserName,CreateDate:CreateDate,Arn:Arn}' --output table
+--------------------------------------------------------
+|                       ListUsers                      |
++-------------+----------------------------------------+
+|  Arn        |  arn:aws:iam::615299766465:user/maxop  |
+|  CreateDate |  2024-12-19T09:56:31+00:00             |
+|  UserName   |  maxop                                 |
++-------------+----------------------------------------+
++ LOG_FILE=/mnt/c/Piyush.7.7.7/All-About-Study/Devops/Projects/Shell-Scripting/Aws-Resource-Tracker/aws-resource-tracker.log
++ echo 'Fetching AWS S3 Buckets List...'
+Fetching AWS S3 Buckets List...
++ aws s3 ls
++ echo 'Fetching AWS EC2 Instances List...'
+Fetching AWS EC2 Instances List...
++ aws ec2 describe-instances --query 'Reservations[*].Instances[*].{ID:InstanceId,State:State.Name,Type:InstanceType,PublicIP:PublicIpAddress,PrivateIP:PrivateIpAddress}' --output table
++ echo 'Fetching AWS Lambda Functions List...'
+Fetching AWS Lambda Functions List...
++ aws lambda list-functions --query 'Functions[*].{FunctionName:FunctionName,Runtime:Runtime,Handler:Handler,LastModified:LastModified}' --output table
++ echo 'Fetching AWS IAM Users List...'
+Fetching AWS IAM Users List...
++ aws iam list-users --query 'Users[*].{UserName:UserName,CreateDate:CreateDate,Arn:Arn}' --output table
+--------------------------------------------------------
+|                       ListUsers                      |
++-------------+----------------------------------------+
+|  Arn        |  arn:aws:iam::615299766465:user/maxop  |
+|  CreateDate |  2024-12-19T09:56:31+00:00             |
+|  UserName   |  maxop                                 |
++-------------+----------------------------------------+
++ LOG_FILE=/mnt/c/Piyush.7.7.7/All-About-Study/Devops/Projects/Shell-Scripting/Aws-Resource-Tracker/aws-resource-tracker.log
++ echo 'Fetching AWS S3 Buckets List...'
+Fetching AWS S3 Buckets List...
++ aws s3 ls
++ echo 'Fetching AWS EC2 Instances List...'
+Fetching AWS EC2 Instances List...
++ aws ec2 describe-instances --query 'Reservations[*].Instances[*].{ID:InstanceId,State:State.Name,Type:InstanceType,PublicIP:PublicIpAddress,PrivateIP:PrivateIpAddress}' --output table
++ echo 'Fetching AWS Lambda Functions List...'
+Fetching AWS Lambda Functions List...
++ aws lambda list-functions --query 'Functions[*].{FunctionName:FunctionName,Runtime:Runtime,Handler:Handler,LastModified:LastModified}' --output table
++ echo 'Fetching AWS IAM Users List...'
+Fetching AWS IAM Users List...
++ aws iam list-users --query 'Users[*].{UserName:UserName,CreateDate:CreateDate,Arn:Arn}' --output table
+--------------------------------------------------------
+|                       ListUsers                      |
++-------------+----------------------------------------+
+|  Arn        |  arn:aws:iam::615299766465:user/maxop  |
+|  CreateDate |  2024-12-19T09:56:31+00:00             |
+|  UserName   |  maxop                                 |
++-------------+----------------------------------------+
